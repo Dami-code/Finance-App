@@ -125,15 +125,17 @@
                 tools:text="Ans D" />
 
             <Button
-                android:id="@+id/next_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="end"
                 android:layout_marginVertical="4dp"
-                android:backgroundTint="#2A3EF2"
-                android:paddingHorizontal="20sp"
+                android:text="Next"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="end"
                 android:textSize="20sp"
-                tools:text="Next" />
+                android:paddingHorizontal="40dp"
+                android:id="@+id/next_btn" />
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

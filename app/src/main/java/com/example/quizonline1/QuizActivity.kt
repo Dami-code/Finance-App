@@ -119,10 +119,10 @@ class QuizActivity : AppCompatActivity(),View.OnClickListener {
             scoreProgressIndicator.progress = percentage
             scoreProgressText.text = "$percentage %"
             if(percentage>60){
-                scoreTitle.text = "Congrats! You have passed"
+                scoreTitle.text = "Congrats! You have passed. You Are A Financial Champion"
                 scoreTitle.setTextColor(Color.BLUE)
             }else{
-                scoreTitle.text = "Oops! You have failed"
+                scoreTitle.text = "You have failed. Please Look at Our Resources Page"
                 scoreTitle.setTextColor(Color.RED)
             }
             scoreSubtitle.text = "$score out of $totalQuestions are correct"
