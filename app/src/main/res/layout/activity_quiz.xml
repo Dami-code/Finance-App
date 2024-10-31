@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".QuizActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Question 7/20"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:id="@+id/question_indicator_textview"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_timer"
+            app:tint="@color/blue"
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@id/timer_indicator_textview"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/timer_indicator_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="5:46"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#637AFA"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/question_progress_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        tools:progress="40"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="8dp"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/question_textview"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="#FA1B1B"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="When you receive extra money, what do you typically do first?" />
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="#DBD8D8"
+                android:gravity="center_vertical"
+                android:paddingVertical="12dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="Ans A" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="#DBD8D8"
+                android:gravity="center_vertical"
+                android:paddingVertical="12dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="Ans B" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="#DBD8D8"
+                android:gravity="center_vertical"
+                android:paddingVertical="12dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="Ans C" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="#DBD8D8"
+                android:gravity="center_vertical"
+                android:paddingVertical="12dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:text="Ans D" />
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginVertical="4dp"
+                android:backgroundTint="#2A3EF2"
+                android:paddingHorizontal="20sp"
+                android:textSize="20sp"
+                tools:text="Next" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
